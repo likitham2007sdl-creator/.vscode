@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Irrigation Controls | AgriCloud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">🌱 AgriCloud</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="farm.html">Farm & Location</a>
+      <a href="irrigation.html">Irrigation</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1>Irrigation Control Centre</h1>
+    <p>Switch demonstration irrigation zones on or off.</p>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <h3>Active Zones</h3>
+        <p><strong id="active-zones">0</strong> / 4</p>
+      </article>
+      <article class="feature-card">
+        <h3>Estimated Water Flow</h3>
+        <p><strong id="water-flow">0</strong> L/min</p>
+      </article>
+    </section>
+
+    <section class="feature-grid zone-grid">
+      <article class="feature-card zone-card" data-zone="1" data-flow="8">
+        <h3>🌱 Zone 1 — Vegetables</h3>
+        <p>Estimated flow: 8 L/min</p>
+        <p>Status: <strong class="zone-status">OFF</strong></p>
+        <button class="btn btn-primary zone-toggle">Turn On</button>
+      </article>
+      <article class="feature-card zone-card" data-zone="2" data-flow="12">
+        <h3>🌾 Zone 2 — Cereal Field</h3>
+        <p>Estimated flow: 12 L/min</p>
+        <p>Status: <strong class="zone-status">OFF</strong></p>
+        <button class="btn btn-primary zone-toggle">Turn On</button>
+      </article>
+      <article class="feature-card zone-card" data-zone="3" data-flow="5">
+        <h3>🍅 Zone 3 — Greenhouse</h3>
+        <p>Estimated flow: 5 L/min</p>
+        <p>Status: <strong class="zone-status">OFF</strong></p>
+        <button class="btn btn-primary zone-toggle">Turn On</button>
+      </article>
+      <article class="feature-card zone-card" data-zone="4" data-flow="10">
+        <h3>🌳 Zone 4 — Orchard</h3>
+        <p>Estimated flow: 10 L/min</p>
+        <p>Status: <strong class="zone-status">OFF</strong></p>
+        <button class="btn btn-primary zone-toggle">Turn On</button>
+      </article>
+    </section>
+
+    <button class="btn btn-outline" id="all-off">Turn All Zones Off</button>
+    <p class="notice">These buttons only update the webpage. They do not operate real irrigation pumps or valves.</p>
+  </main>
+
+  <footer class="site-footer">AgriCloud Smart Agriculture</footer>
+  <script src="app.js"></script>
+</body>
+</html>

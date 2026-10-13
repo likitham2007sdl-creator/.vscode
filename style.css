@@ -1,0 +1,244 @@
+
+:root {
+    --green: #1f9d68;
+    --dark-green: #11764b;
+    --background: #f4f9f5;
+    --text: #17332a;
+    --muted: #6c8078;
+    --white: #ffffff;
+    --border: #e0ebe4;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .brand {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: var(--dark-green);
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  
+  .nav-links a:hover {
+    color: var(--dark-green);
+    background: #e6f7ee;
+  }
+  
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 35px;
+    padding: 65px 6%;
+    background: #edf8f0;
+  }
+  
+  .hero h1 {
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.1;
+  }
+  
+  .hero p {
+    color: var(--muted);
+  }
+  
+  .text-green {
+    color: var(--green);
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .eyebrow {
+    color: var(--dark-green);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 11px 16px;
+    margin: 6px 5px 6px 0;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .btn-primary {
+    color: white;
+    background: var(--green);
+  }
+  
+  .btn-primary:hover {
+    background: var(--dark-green);
+  }
+  
+  .btn-outline {
+    background: white;
+    border-color: var(--border);
+    color: var(--text);
+  }
+  
+  .section,
+  .page-main {
+    padding: 45px 6%;
+  }
+  
+  .section h2,
+  .panel h2 {
+    margin-top: 0;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+  }
+  
+  .feature-card,
+  .panel {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 22px;
+    min-width: 0;
+    box-shadow: 0 5px 20px rgba(20, 70, 45, 0.04);
+  }
+  
+  .feature-card {
+    color: var(--text);
+    text-decoration: none;
+  }
+  
+  .feature-card p {
+    color: var(--muted);
+  }
+  
+  .feature-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .panel {
+    margin-top: 22px;
+  }
+  
+  .panel canvas {
+    max-height: 340px;
+  }
+  
+  .map-frame {
+    height: 350px;
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #e9f1eb;
+    display: grid;
+    place-items: center;
+  }
+  
+  .map-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .zone-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .notice {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #705b22;
+    background: #fff8e7;
+    border: 1px solid #f0e3b9;
+  }
+  
+  .site-footer {
+    padding: 25px 6%;
+    background: white;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    text-align: center;
+  }
+  
+  button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+  
+  @media (max-width: 760px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding-top: 35px;
+    }
+  
+    .hero-image {
+      height: 270px;
+    }
+  
+    .feature-grid,
+    .zone-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .site-header {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  
+    .nav-links {
+      gap: 4px;
+    }
+  
+    .nav-links a {
+      padding: 7px;
+    }
+  }
+  

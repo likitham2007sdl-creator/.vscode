@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Dashboard | AgriCloud</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">🌱 AgriCloud</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="farm.html">Farm & Location</a>
+      <a href="irrigation.html">Irrigation</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1>Smart Farm Dashboard</h1>
+    <p>Environmental monitoring and current local weather.</p>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <h3>🌡️ Temperature</h3>
+        <p><strong id="temperature">--</strong> °C</p>
+        <small>Live weather after location permission</small>
+      </article>
+      <article class="feature-card">
+        <h3>💧 Soil Moisture</h3>
+        <p><strong id="moisture">--</strong> %</p>
+        <small>Simulated sensor reading</small>
+      </article>
+      <article class="feature-card">
+        <h3>☁️ Air Humidity</h3>
+        <p><strong id="humidity">--</strong> %</p>
+        <small>Simulated sensor reading</small>
+      </article>
+      <article class="feature-card">
+        <h3>🚰 Water Tank</h3>
+        <p><strong id="tank">--</strong> %</p>
+        <small>Simulated tank level</small>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Sensor Trend</h2>
+      <canvas id="sensorChart"></canvas>
+    </section>
+
+    <section class="panel">
+      <h2>Local Weather</h2>
+      <p id="weather-description">Weather not loaded</p>
+      <p id="weather-humidity">Humidity: --</p>
+      <p id="weather-wind">Wind: --</p>
+      <button class="btn btn-primary" id="weather-button">Get Local Weather</button>
+      <p id="weather-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">AgriCloud Smart Agriculture</footer>
+  <script src="app.js"></script>
+</body>
+</html>
