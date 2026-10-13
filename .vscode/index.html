@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriCloud | Smart Agriculture</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">🌱 AgriCloud</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="farm.html">Farm & Location</a>
+      <a href="irrigation.html">Irrigation</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">CLOUD-BASED SMART FARMING</p>
+        <h1>Grow smarter.<br><span class="text-green">Harvest better.</span></h1>
+        <p>Monitor temperature, soil moisture, humidity, farm location, and irrigation through one agriculture dashboard.</p>
+        <a class="btn btn-primary" href="dashboard.html">Open Dashboard →</a>
+        <a class="btn btn-outline" href="farm.html">Explore Farm</a>
+      </div>
+      <img class="hero-image"
+        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80"
+        alt="Green agricultural fields">
+    </section>
+
+    <section class="section">
+      <h2>Smart Agriculture Modules</h2>
+      <div class="feature-grid">
+        <a class="feature-card" href="dashboard.html">
+          <h3>📊 Smart Dashboard</h3>
+          <p>Monitor temperature, humidity, soil moisture, and water levels.</p>
+        </a>
+        <a class="feature-card" href="farm.html">
+          <h3>🗺️ Farm & Location</h3>
+          <p>View farm photos, coordinates, and a location map.</p>
+        </a>
+        <a class="feature-card" href="irrigation.html">
+          <h3>💧 Irrigation Controls</h3>
+          <p>Manage demonstration irrigation zones.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>How the system works</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><h3>1. Collect</h3><p>Sensors measure field conditions.</p></div>
+        <div class="feature-card"><h3>2. Process</h3><p>A controller sends readings to a cloud service.</p></div>
+        <div class="feature-card"><h3>3. Monitor</h3><p>The dashboard displays measurements.</p></div>
+      </div>
+      <p class="notice">This version simulates sensor readings and irrigation switches. It does not control physical farm equipment.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    Cloud-Based Smart Agriculture Cultivation · <span id="year"></span>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
